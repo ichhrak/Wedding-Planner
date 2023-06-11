@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+  <meta name="viewport" content ="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -37,14 +37,14 @@
     }
   </style>
 </head>
-<body style="background-color: #FFF9F3;">
+<body>
+  <nav class="navbar"></nav>
   <header class="hero-section">
     <h2 class="smaller-heading" style="font-family: 'Alike'; font-weight: 400; color: #3F3329; margin-top: -350px;">Book a consultation</h2>
   </header>
   <div>
     <h2 class="smaller-heading" style="font-family: 'Alike'; font-weight: 400; color: #3F3329; margin-top: -450px;">View our available time slots</h2>
-  </div>
-  <nav class="navbar"></nav>  
+  </div> 
   <section class="calendar" style="background-color: #FFF9F3;">
     <div class="container">
       <div class="row">
@@ -68,7 +68,7 @@
       </div>
     </div>
   </section>
-  <footer style="margin-top: 50px;"></footer>
+  <footer></footer>
   <script src="js/nav.js"></script>
   <script src="js/footer.js"></script>
   <script>
@@ -76,7 +76,6 @@
       $('#datepicker').datepicker({
         format: 'yyyy-mm-dd', // Set the desired date format
         autoclose: true // Close the calendar when a date is selected
-        // Add any other options
       });
     });
   </script>
