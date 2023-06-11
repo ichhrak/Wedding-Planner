@@ -1,12 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    width : 100%;
     box-sizing: border-box;
     font-family: 'Great Vibes', sans-serif;
 }
 
 .navbar {
+    width : 100%;
     overflow: hidden;
     position: absolute;
     width: 1440px;
