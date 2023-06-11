@@ -8,7 +8,7 @@ $(document).ready(function() {
   $(document).ready(function() {
     $('.submit-button').on('click', function() {
       alert('Reservation Successful');
-      window.location.href = 'index.html'; // Replace 'home.html' with the actual URL of your home page
+      window.location.href = 'index.html'; 
     });
   });
   
