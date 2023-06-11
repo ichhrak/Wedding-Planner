@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+  <title>Consult</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/consult.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <style>
+    .smaller-heading {
+      font-size: 36px;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .smaller-calendar {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .next-button {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body style="background-color: #FFF9F3;">
+  <header class="hero-section">
+    <h2 class="smaller-heading" style="font-family: 'Alike'; font-weight: 400; color: #3F3329; margin-top: -350px;">Book a consultation</h2>
+  </header>
+  <div>
+    <h2 class="smaller-heading" style="font-family: 'Alike'; font-weight: 400; color: #3F3329; margin-top: -450px;">View our available time slots</h2>
+  </div>
+  <nav class="navbar"></nav>  
+  <section class="calendar" style="background-color: #FFF9F3;">
+    <div class="smaller-calendar">
+      <input id="datepicker" class="form-control" type="text" placeholder="Select a date">
+    </div>
+    <div class="next-button">
+      <a class="btn btn-primary" style="background-color: #882E2E;" href="appointment.html">Next</a>
+    </div>
+    <div>
+      <h2 class="smaller-heading" style="font-family: 'Alike'; font-weight: 400; color: #3F3329; margin-top: 100px;">Meet our coordinators</h2>
+      <img src="img/people1.png" alt="" style="width: 1300px; height: auto; margin-left: 70px; margin-top: 50px; margin-bottom: 140px;">
+      <img src="img/people2.png" alt="" style="width: 1300px; height: auto; margin-left: 70px; margin-top: -100px;">
+    </div>
+  </section>
+  <footer style="margin-top: 50px;"></footer>
+  <script src="js/nav.js"></script>
+  <script src="js/footer.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#datepicker').datepicker({
+        format: 'yyyy-mm-dd', // Set the desired date format
+        autoclose: true // Close the calendar when a date is selected
+        // Add any other
+
+      });
+    });
+  </script>
+</body>
+</html>
