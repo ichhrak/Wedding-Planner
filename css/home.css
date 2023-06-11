@@ -72,4 +72,28 @@
 }
 
 
+body {
+    background-color: #FFF9F3;
+    margin: 0;
+    padding: 0;
+  }
+  .homescreen {
+    padding: 50px;
+  }
+  .product-info {
+    margin-top: 20px;
+  }
+  .product-short-des {
+    margin-top: 10px;
+  }
+  .description,
+  .product-brand {
+    font-family: 'Alike';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #3F3329;
+  }
+
 
