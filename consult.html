@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/consult.css">
   <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/nav.css">
   <style>
     .smaller-heading {
       font-size: 36px;
@@ -23,7 +22,6 @@
     }
 
     .smaller-calendar {
-      width: 70%;
       margin: 0 auto;
     }
 
@@ -31,10 +29,15 @@
       text-align: center;
       margin-top: 20px;
     }
+
+    @media (min-width: 576px) {
+      .smaller-calendar {
+        width: 70%;
+      }
+    }
   </style>
 </head>
 <body style="background-color: #FFF9F3;">
-  <nav></nav>
   <header class="hero-section">
     <h2 class="smaller-heading" style="font-family: 'Alike'; font-weight: 400; color: #3F3329; margin-top: -350px;">Book a consultation</h2>
   </header>
@@ -43,16 +46,26 @@
   </div>
   <nav class="navbar"></nav>  
   <section class="calendar" style="background-color: #FFF9F3;">
-    <div class="smaller-calendar">
-      <input id="datepicker" class="form-control" type="text" placeholder="Select a date">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="smaller-calendar">
+            <input id="datepicker" class="form-control" type="text" placeholder="Select a date">
+          </div>
+          <div class="next-button">
+            <a class="btn btn-primary" style="background-color: #882E2E;" href="appointment.html">Next</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="next-button">
-      <a class="btn btn-primary" style="background-color: #882E2E;" href="appointment.html">Next</a>
-    </div>
-    <div>
-      <h2 class="smaller-heading" style="font-family: 'Alike'; font-weight: 400; color: #3F3329; margin-top: 100px;">Meet our coordinators</h2>
-      <img src="img/people1.png" alt="" style="width: 1300px; height: auto; margin-left: 70px; margin-top: 50px; margin-bottom: 140px;">
-      <img src="img/people2.png" alt="" style="width: 1300px; height: auto; margin-left: 70px; margin-top: -100px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h2 class="smaller-heading" style="font-family: 'Alike'; font-weight: 400; color: #3F3329; margin-top: 100px;">Meet our coordinators</h2>
+          <img src="img/people1.png" alt="" class="img-fluid" style="margin-top: 50px; margin-bottom: 140px;">
+          <img src="img/people2.png" alt="" class="img-fluid" style="margin-top: -100px;">
+        </div>
+      </div>
     </div>
   </section>
   <footer style="margin-top: 50px;"></footer>
@@ -63,8 +76,7 @@
       $('#datepicker').datepicker({
         format: 'yyyy-mm-dd', // Set the desired date format
         autoclose: true // Close the calendar when a date is selected
-        // Add any other
-
+        // Add any other options
       });
     });
   </script>
