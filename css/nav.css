@@ -45,46 +45,6 @@
 }
 
 
-.search {
-    width: 500px;
-    display: flex;
-}
-
-.search-box {
-    position: absolute;
-    width: 351px;
-    height: 40px; 
-    left: 1065px;
-    top: 32px;
-    background: #FFF9F3;
-    border: none; 
-    border-radius: 60px;
-    padding-left: 50px; 
-}
-
-.nav-items a {
-    box-sizing: border-box;
-    position: absolute;
-    width: 18px;
-    height: 19px;
-    left: 1080px;
-    top: 40px;
-
-    border: 4px solid #DECABA;
-    border-radius: 119px;
-}
-
-.navitems a img{
-    position: absolute;
-    width: 18.66px;
-    height: 0px;
-    left: 1090px;
-    top: 59px;
-    
-    border: 2px solid #DECABA;
-    transform: matrix(0.64, 0.77, -0.73, 0.69, 0, 0);
-}
-
 .links-container {
     width: 100%;
     display: flex; 
