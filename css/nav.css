@@ -1,75 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Great Vibes', sans-serif;
-}
-
 .navbar {
-    width : 100%;
-    overflow: hidden;
-    position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 110px;
-    left: 0px;
-    top: -2px;
-    z-index: 9;
     background: #DECABA;
     mix-blend-mode: normal;
 }
 
-.nav{
-    padding: 10px 10vw;
+.nav {
+    padding: 10px 2vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
-.brand-logo{
-    position: absolute;
+.brand-logo {
     width: 146px;
     height: 144px;
-    left: -7px;
-    top: -13px;
-    
     background: url(image.png);
-    border-radius: 119px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
-.brand-name{
-    position: absolute;
+.brand-name {
     width: 150px;
     height: 86px;
-    left: 105px;
-    top: 13px;
-    
     background: url(name.png);
+    margin-right: 20px;
 }
 
-
 .links-container {
-    width: 100%;
-    display: flex; 
-    margin-top: 10px;
-    margin-left: 450px;
-    list-style-type: none; 
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    flex: 1;
+    padding: 0;
 }
 
 .link {
-    width: 222px;
-    height: 36px;
     font-family: 'Alike';
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 20px;
     line-height: 40px;
     text-align: center;
     color: #3F3329;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    opacity: 0.5;
     text-decoration: none;
-    margin: 10px 20px;
+    margin: 0 10px;
+    opacity: 0.5;
 }
 
 .link:hover {
